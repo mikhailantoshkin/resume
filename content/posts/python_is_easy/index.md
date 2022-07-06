@@ -14,7 +14,7 @@ that basically just does `json.loads` and `json.dumps`?
 ![Service consumes several Gb of memory](memory_usage.jpg "Memory hog")
 
 Yeah, it's not. So, I'm on the hunt for this illusive memory leak, when I stumble on a zombie processes in one of our 
-service (you can actually see it on the screenshot above, it's processes with 0B memory usage). 
+services (you can actually see it on the screenshot above, it's the processes with 0B memory usage). 
 
 ## What is a zombie anyway?
 Just a quick refresher on a zombie processes (more for me, than for a reader). Zombie process is an already
@@ -62,7 +62,7 @@ Does that `sys.exit()` in worker process propagate to parent? It does not, does 
 
 So the first thing I did is changed multiprocessing start method to `spawn`, because it's what I always do when debugging
 services with multiprocessing involved, just for a good measure. And it... just fixed the bug? Huh? Well, that's odd, but 
-at leas I have a fix, if I don't find anything.
+at least I have a fix, if I don't find anything.
 
 Okay, time to debug this. I roll my sleeves and get to work. Putting `try except` all over the place didn't catch anything interesting. 
 After some poking here and there, and finding absolutely nothing, I decide to switch `sys.exit()` with just raising a 
@@ -226,7 +226,7 @@ I was expecting to see, to be honest.
 
 I ran `strace` a few more times to see if something would change when leaving zombie process and running 
 everything with `spawn`, but no, nothing major, it just shows me what I already can see in logs... Dead end. 
-But at leas we know that no one is sending `SIGTERM` to the parent process. But it still shuts down for some reason. 
+But at least we know that no one is sending `SIGTERM` to the parent process. But it still shuts down for some reason. 
 
 At this point I got desperate enough to start mingling with source code of aiohttp. Since it's Python, you can change 
 the source code of any installed library (if it is not a C extension). So that is exactly what I did.
