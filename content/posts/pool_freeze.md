@@ -6,7 +6,7 @@ draft=false
 [extra]
 disable_comments = true
 +++
-> Originally this was a part of [Python is easy](@/posts/python_is_easy/index.md) article, but it quicly grew way to big
+> Originally this was a part of [Python is easy](@/posts/python_is_easy/index.md) article, but it quickly grew way to big
 > for a tangent, so I've decided to give it its own place under the sun. 
 
 Let's imagine you are running a `multiprocessing.Pool` and want some clever stuff to happen when your worker terminates.
