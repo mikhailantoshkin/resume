@@ -6,7 +6,7 @@ template="resume.html"
 ## About
 
 Hello, my name is Mikhail, and I'm a Python backend software developer who also happens to be writing some Rust. 
-You can find links to my socials in the bottom right corner of the page.
+You can find links to my socials in the bottom right corner of the page. This resume is also available in [pdf](resume/resume.pdf).
 
 ## Experience
 
@@ -52,4 +52,10 @@ You can find links to my socials in the bottom right corner of the page.
 
 * English - B2-C1 (depending on the type of the activity)
 * Russian - Native speaker
-* Korean - Learning
+
+## Contact information
+
+* mike.antoshkin@gmail.com
+* [github.com/mikhailantoshkin](https://github.com/mikhailantoshkin)
+* [linkedin.com/in/mikhail-antoshkin](https://www.linkedin.com/in/mikhail-antoshkin/)
+* [t.me/mike_antoshkin](https://t.me/mike_antoshkin)
