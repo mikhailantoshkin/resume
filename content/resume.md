@@ -6,7 +6,7 @@ template="resume.html"
 ## About
 
 Hello, my name is Mikhail, and I'm a Python backend software developer who also happens to be writing some Rust. 
-You can find links to my socials in the bottom right corner of the page. This resume is also available in [pdf](resume/resume.pdf).
+You can find links to my socials in the bottom right corner of the page. This resume is also available in [pdf](resume.pdf).
 
 ## Experience
 
