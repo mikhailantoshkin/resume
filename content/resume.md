@@ -3,15 +3,19 @@ title="Resume"
 template="resume.html"
 +++
 
-## About
+## Mikhail Antoshkin
 
-Hello, my name is Mikhail, and I'm a Python backend software developer who also happens to be writing some Rust. 
+#### Backend Python Software Engineer
+
+## Intorduction
+
+Hello, my name is Mikhail, and I'm a backend python software engineer who also happens to be writing some Rust. 
 You can find links to my socials in the bottom right corner of the page. This resume is also available in [pdf](resume.pdf).
 
 ## Experience
 
 * ### 2019-08-14 - Present time 
-    **Software Engineer at [CyberLympha](cyberlympha.com)**
+    **Software Engineer at [CyberLympha](https://cyberlympha.com/)**
     
     Starting as a junior developer after my 4th year of University, working part-time for a year, I was responsible for creating several MVPs before
     joining the main team (although quite small at the time, only 10 people, including QA and Analytics). Now I'm one 
