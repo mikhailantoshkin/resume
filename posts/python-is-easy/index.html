@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta itemprop="name" content="Mikhail Antoshkin" />
+  <meta itemprop="description" content="" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://mikhailantoshkin.github.io/blog/apple-touch-icon.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="https://mikhailantoshkin.github.io/blog/favicon-32x32.png" />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="https://mikhailantoshkin.github.io/blog/favicon-16x16.png"
+  />
+  <link
+    rel="shortcut icon"
+    href="https://mikhailantoshkin.github.io/blog/favicon.ico"
+  />
+  <link rel="stylesheet" href="https://mikhailantoshkin.github.io/blog/style.css"/>
+  
+  <title>Python is easy</title>
+  
+
+  
+
+  <body id="page">
+
+	
+<header id="site-header" class="animated slideInUp faster">
+  <div class="hdr-wrapper section-inner">
+    <div class="hdr-left">
+      <div class="site-branding">
+        <a href="https:&#x2F;&#x2F;mikhailantoshkin.github.io&#x2F;blog">Home</a>
+      </div>
+      <nav class="site-nav hide-in-mobile">
+            
+        
+        <a href="https://mikhailantoshkin.github.io/blog/posts">Posts</a>
+        
+        <a href="https://mikhailantoshkin.github.io/blog/resume">Resume</a>
+        
+      </nav>
+    </div>
+    <div class="hdr-right hdr-icons">
+      <span class="hdr-social hide-in-mobile">
+        
+
+<a href="https:&#x2F;&#x2F;twitter.com&#x2F;mike_antoshkin" target="_blank" rel="noopener me"
+   title="twitter">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+  
+</a>
+
+<a href="https:&#x2F;&#x2F;github.com&#x2F;mikhailantoshkin" target="_blank" rel="noopener me"
+   title="github">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+  
+</a>
+
+<a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;mikhail-antoshkin&#x2F;" target="_blank" rel="noopener me"
+   title="linkedin">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+  
+</a>
+
+<a href="mike.antoshkin@gmail.com" target="_blank" rel="noopener me"
+   title="email">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+  
+</a>
+
+
+      </span>
+      <button id="menu-btn" class="hdr-btn" title="Menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-menu"
+        >
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div id="mobile-menu" class="animated fast">
+  <ul>
+    
+    <li><a href="https://mikhailantoshkin.github.io/blog/posts">Posts</a></li>
+    
+    <li><a href="https://mikhailantoshkin.github.io/blog/resume">Resume</a></li>
+    
+  </ul>
+</div>
+
+	
+	
+
+		
+<main class="site-main section-inner animated fadeIn faster">
+  <article class="thin">
+	<header class="post-header">
+	  <div class="post-meta">
+		
+		<span>Jun 25, 2022</span>
+		<small> - 
+<span class="reading-time" title="Estimated read time">
+  
+  14 min read
+  
+</span>
+</small>
+		
+            
+	  </div>
+	  <h1>Python is easy</h1>
+	</header>
+
+	<div class="content">
+        
+	  <p>This story begins with me tracking down memory leaks in our python services. Yes, Python has GC, so it's rare to have memory leaks.
+But when they do happen, oof, is it a doozy to hunt them down. And does this looks normal to you, for a simple web server
+that basically just does <code>json.loads</code> and <code>json.dumps</code>?</p>
+<p><img src="https://mikhailantoshkin.github.io/blog/posts/python-is-easy/memory_usage.jpg" alt="Service consumes several Gb of memory" title="Memory hog" /></p>
+<p>Yeah, it's not. So, I'm on the hunt for this illusive memory leak, when I stumble on a zombie processes in one of our 
+services (you can actually see it on the screenshot above, it's the processes with 0B memory usage). </p>
+<h2 id="what-is-a-zombie-anyway">What is a zombie anyway?</h2>
+<p>Just a quick refresher on a zombie processes (more for me, than for a reader). Zombie process is an already
+terminated process, which exit code has not been red by the parent process. Zombie processes do not take up
+any system resources like memory or CPU, but still occupy a place in the process table. So having a few of them is not
+that big of a deal. But if your program is spawning a lot of child processes and not taking care to set up proper handling
+of <code>SIGCHLD</code> (signal send by child process on its termination), either by issuing <code>wait</code> for child PID, or by ignoring 
+it entirely with <code>SIG_IGN</code>, it can lead to DOS, because of PID starvation. In our case, the system
+could be running for a long periods of time, so zombie processes could easily pile up.</p>
+<p>To understand where this zombie apocalypse was coming from, we need a bit of trivia on what this service actually does. </p>
+<h2 id="how-does-it-work">How does it work?</h2>
+<p>This service is a simple aiohttp web server receiving work requests over REST and asynchronously applying them onto 
+a pool of workers. Well, technically, it's a pool of <em>pools</em> of workers. To handle everything nicely we have a wrapper around 
+<code>multiprocessing.Pool</code>, called <code>CancellablePool</code>. It actually does not subclass <code>Pool</code>, it just spawns several of 
+them with <code>processes=1</code>. Yes, it has overhead (crating a pool spawns threads and what not), but you don't need to implement 
+<code>terminate</code> yourself and all other machinery, which is nice. </p>
+<p>We went with this solution for one simple reason: if user disconnects from the server it should cancel his work. 
+Since there is no built-in way to shut down worker threads aside asking them nicely. Also, 
+no GIL and all that stuff (it's not like we are going to be GIL limited, but why not blame it for a good measure, right?).</p>
+<p>So the work loop for the server is simple: user connects, his work moves on the one of the worker processes, 
+if user disconnects the process is terminated and new one is spawned, otherwise user gets result from the worker. 
+As it happens, one workload needs to use some system binary, so we just run it with <a href="https://github.com/pexpect/pexpect">pexpect</a>. 
+As you might already guess, when worker is killed with <code>SIGTERM</code> the process spawned with pexepct becomes a zombie.</p>
+<p>So the fix should simple, register signal handler to catch <code>SIGTERM</code>, kill the child process and then <code>sys.exit()</code>. 
+This fix should take 5 minutes, what could go wrong? So I apply the fix, push it to our repo, fight a linter and then deploy to one 
+of our testing VMs. Like a <em>good developer</em>, who actually tests his code before it gets to QA. And yeah, it works as 
+expected, I send command, worker starts execution, spawns a child process, I cancel the command, worker catches <code>SIGTERM</code>,
+kills the child process and exits. All as planned. </p>
+<p>And then whole service shuts down. </p>
+<p>Huh? That's... Unexpected. I try it again, but without canceling the request, and it works fine. Okay, so, canceling
+the request is shutting down the web server, that's weird... 
+Does that <code>sys.exit()</code> in worker process propagate to parent? It does not, does it? </p>
+<p><img src="https://mikhailantoshkin.github.io/blog/posts/python-is-easy/is_it.jpg" alt="Nataly Portman form the meme &quot;is it?&quot;" title="funny" /></p>
+<blockquote>
+<p>Spoiler, it kinda does, but not in the way you think. </p>
+</blockquote>
+<p>So the first thing I did is changed multiprocessing start method to <code>spawn</code>, because it's what I always do when debugging
+services with multiprocessing involved, just for a good measure. And it... just fixed the bug? Huh? Well, that's odd, but 
+at least I have a fix, if I don't find anything.</p>
+<p>Okay, time to debug this. I roll my sleeves and get to work. Putting <code>try except</code> all over the place didn't catch anything interesting. 
+After some poking here and there, and finding absolutely nothing, I decide to switch <code>sys.exit()</code> with just raising a 
+random exception. And that deadlocks the server. </p>
+<p>Wait, what? </p>
+<p>At this point I've spent about an hour on this and got a bit frustrated. So, to distract myself, I went on a little side
+trip to confirm my theory on why exactly raising anything but <code>SystemExit</code> from worker deadlocks the <code>multiprocessing.Pool</code>.</p>
+<blockquote>
+<p>Originally I planned to include it here, but it quickly grew into way to big of a tangent, so I decided to move it 
+to a separate article, you can read it <a href="https://mikhailantoshkin.github.io/blog/posts/pool-freeze/">here</a></p>
+</blockquote>
+<p>After that refreshing hunt, I've returned to main problem. Webserver is shutting down when client
+disconnects, and I don't know why. As one of my colleagues likes to say:</p>
+<blockquote>
+<p>When in doubt - use strace</p>
+</blockquote>
+<p>I guess the time has come.</p>
+<h2 id="strace-for-the-rescue">Strace for the rescue</h2>
+<p>In short, <code>sctrace</code> allows you to see all system calls made by a process and all signals it's receiving. Perfect 
+tool for the job. So I've dropped amount of workers in the pool to 1 and went to town. I've started with simple 
+<code>strace -e 'trace=!all'</code> on main process.</p>
+<pre data-lang="bash" class="language-bash "><code class="language-bash" data-lang="bash">sudo strace -p 1116642 -e &#x27;trace=!all&#x27;
+strace: Process 1116642 attached
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=7, si_uid=999, si_status=0, si_utime=0, si_stime=0} ---
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12, si_uid=999, si_status=0, si_utime=0, si_stime=0} ---
++++ exited with 0 +++
+</code></pre>
+<blockquote>
+<p>Don't be surprised by PIDs you'll see in strace output. The web server is in a docker container, so it will always have 
+PID 1, but in the system it will be different. That is just how docker works.</p>
+</blockquote>
+<p>Huh? Two SIGCHLD? And no SIGTERM? Why does it shut down then? Okay, I guess it's not verbose enough. Also, let's run 
+it on the worker too, for the good measure. Both processes do a lot of <code>read</code>, <code>stat</code> and <code>epoll</code>, so I'll spare you the fun
+and leave only the interesting parts. Let's look at the worker first.</p>
+<pre data-lang="bash" class="language-bash "><code class="language-bash" data-lang="bash">strace: Process 1273547 attached
+...
+select(0, NULL, NULL, NULL, {tv_sec=0, tv_usec=50000}) = ? ERESTARTNOHAND (To be restarted if no handler)
+<mark>--- SIGTERM {si_signo=SIGTERM, si_code=SI_USER, si_pid=1, si_uid=999} ---
+</mark>write(5, &quot;\17&quot;, 1)                      = 1
+...
+<mark>kill(18, SIGHUP)                        = 0
+</mark>select(0, NULL, NULL, NULL, {tv_sec=0, tv_usec=100000}) = ? ERESTARTNOHAND (To be restarted if no handler)
+<mark>--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_KILLED, si_pid=18, si_uid=999, si_status=SIGHUP, si_utime=4, si_stime=5} ---
+</mark>select(0, NULL, NULL, NULL, {tv_sec=0, tv_usec=99681}) = 0 (Timeout)
+wait4(18, [{WIFSIGNALED(s) &amp;&amp; WTERMSIG(s) == SIGHUP}], WNOHANG, NULL) = 18
+getpid()                                = 7
+write(1, &quot;{\&quot;level\&quot;: \&quot;INFO\&quot;, \&quot;time\&quot;: \&quot;2022-&quot;..., 223) = 223
+<mark>rt_sigaction(SIGINT, {sa_handler=0x7f10691ba043, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7f1068f4cd60}, {sa_handler=0x7f10691ba043, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7f1068f4cd60}, 8) = 0
+</mark><mark>rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7f1068f4cd60}, {sa_handler=0x7f10691ba043, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7f1068f4cd60}, 8) = 0
+</mark>close(15)                               = 0
+select(0, NULL, NULL, NULL, {tv_sec=0, tv_usec=100000}) = 0 (Timeout)
+exit_group(0)                           = ?
++++ exited with 0 +++
+</code></pre>
+<p>So, nothing unusual here. It received <code>SIGTERM</code>, issued <code>kill</code> syscall for PID 18 (it's a PID of process spawned with <code>pexpect</code>),
+received <code>SIGCHLD</code>, reset signal handlers for <code>SIGINT</code> and <code>SIGTERM</code> (because you should always do that) and exited.</p>
+<p>Okay, so nothing fishy here, let's take a look at main process. It has a lot more output (well, duh, it runs web server)</p>
+<pre data-lang="bash" class="language-bash "><code class="language-bash" data-lang="bash">strace: Process 1273456 attached
+...
+futex(0x7f1069489608, FUTEX_WAKE_PRIVATE, 1) = 1
+wait4(7, 0x7fffab17b66c, WNOHANG, NULL) = 0
+<mark>kill(7, SIGTERM)                        = 0
+</mark>futex(0x7f106948960c, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7f1069489610, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7f1050000b60, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+getpid()                                = 1
+wait4(7, 0x7fffab17b74c, WNOHANG, NULL) = 0
+getpid()                                = 1
+wait4(7, [{WIFEXITED(s) &amp;&amp; WEXITSTATUS(s) == 0}], 0, NULL) = 7
+<mark>--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=7, si_uid=999, si_status=0, si_utime=0, si_stime=0} ---
+</mark>pipe2([14, 16], O_CLOEXEC)              = 0
+getpid()                                = 1
+...
+pipe2([23, 24], O_CLOEXEC)              = 0
+<mark>clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f1068d9ba10) = 19
+</mark>close(22)                               = 0
+close(23)                               = 0
+getpid()                                = 1
+<mark>clone(child_stack=0x7f105f7fdfb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[20], tls=0x7f105f7fe700, child_tidptr=0x7f105f7fe9d0) = 20
+</mark>futex(0x559ba36ae2a0, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+futex(0x7f1069489608, FUTEX_WAIT_BITSET_PRIVATE, 0, {tv_sec=248387, tv_nsec=464054828}, FUTEX_BITSET_MATCH_ANY) = 0
+futex(0x7f1069489610, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x7f106948960c, FUTEX_WAIT_BITSET_PRIVATE, 0, {tv_sec=248387, tv_nsec=464096937}, FUTEX_BITSET_MATCH_ANY) = 0
+futex(0x7f1069489610, FUTEX_WAKE_PRIVATE, 1) = 0
+<mark>clone(child_stack=0x7f105fffefb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[21], tls=0x7f105ffff700, child_tidptr=0x7f105ffff9d0) = 21
+</mark>futex(0x7f1069489608, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7f1069489610, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7f1058000b60, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+futex(0x7f106948960c, FUTEX_WAIT_BITSET_PRIVATE, 0, {tv_sec=248387, tv_nsec=464339836}, FUTEX_BITSET_MATCH_ANY) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7f1069489610, FUTEX_WAKE_PRIVATE, 1) = 0
+<mark>clone(child_stack=0x7f1064a28fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[22], tls=0x7f1064a29700, child_tidptr=0x7f1064a299d0) = 22
+</mark>futex(0x7f1069489608, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7f1069489610, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x559ba36ae270, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7f106948960c, FUTEX_WAIT_BITSET_PRIVATE, 0, {tv_sec=248387, tv_nsec=464498531}, FUTEX_BITSET_MATCH_ANY) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7f1069489610, FUTEX_WAKE_PRIVATE, 1) = 0
+getpid()                                = 1
+...
+futex(0x7f1069489610, FUTEX_WAKE_PRIVATE, 1) = 0
+<mark>--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=19, si_uid=999, si_status=0, si_utime=0, si_stime=0} ---
+</mark>futex(0x7f1069489610, FUTEX_WAKE_PRIVATE, 1) = 0
+write(20, &quot;\0\0\0\4\200\4N.&quot;, 8)        = 8
+write(18, &quot;\0\0\0\4\200\4N.&quot;, 8)        = 8
+wait4(19, [{WIFEXITED(s) &amp;&amp; WEXITSTATUS(s) == 0}], WNOHANG, NULL) = 19
+getpid()                                = 1
+<mark>rt_sigaction(SIGINT, {sa_handler=0x7f10691ba043, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7f1068f4cd60}, {sa_handler=0x7f10691ba043, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART, sa_restorer=0x7f1068f4cd60}, 8) = 0
+</mark><mark>rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7f1068f4cd60}, {sa_handler=0x7f10691ba043, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART, sa_restorer=0x7f1068f4cd60}, 8) = 0
+</mark>stat(&quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python3.10&#x2F;asyncio&#x2F;events.py&quot;, {st_mode=S_IFREG|0644, st_size=27224, ...}) = 0
+...
+epoll_wait(3, [], 1, 0)                 = 0
+getpid()                                = 1
+epoll_ctl(3, EPOLL_CTL_DEL, 4, 0x7fffab17c9c4) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(3)                                = 0
+getpid()                                = 1
+write(1, &quot;{\&quot;level\&quot;: \&quot;INFO\&quot;, \&quot;time\&quot;: \&quot;2022-&quot;..., 190) = 190
+<mark>rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7f1068f4cd60}, {sa_handler=0x7f10691ba043, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7f1068f4cd60}, 8) = 0
+</mark>close(14)                               = 0
+close(16)                               = 0
+close(17)                               = 0
+close(18)                               = 0
+close(19)                               = 0
+close(20)                               = 0
+close(6)                                = 0
+close(7)                                = 0
+close(8)                                = 0
+close(10)                               = 0
+close(9)                                = 0
+close(11)                               = 0
+munmap(0x7f10694bd000, 32)              = 0
+munmap(0x7f1069493000, 32)              = 0
+munmap(0x7f1069492000, 32)              = 0
+munmap(0x7f1068b1b000, 32)              = 0
+munmap(0x7f1068b1a000, 32)              = 0
+munmap(0x7f1067e69000, 32)              = 0
+munmap(0x7f1064128000, 32)              = 0
+munmap(0x7f1064127000, 32)              = 0
+munmap(0x7f1064126000, 32)              = 0
+munmap(0x7f1064125000, 32)              = 0
+munmap(0x7f1064124000, 32)              = 0
+munmap(0x7f1064123000, 32)              = 0
+brk(0x559ba3b03000)                     = 0x559ba3b03000
+munmap(0x7f1065542000, 1314816)         = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
+</code></pre>
+<p>Here we have a <code>kill(7, SIGTERM)</code> followed by <code>SIGCHLD</code> form PID 7, which is a worker process, so everything as expected.
+And after that we have several <code>clone</code> syscalls, so it spins another <code>multiprocessing.Pool</code>, as expected. Then a lot of
+<code>stat</code>, <code>write</code> and all the <code>epoll</code> related business. And then <code>SIGCHLD</code> for the newly started pool, followed by 
+resetting of signal handlers, some more <code>stat</code>, some <code>write</code> of logs to the terminal with final <code>rt_sigaction</code> to set
+<code>SIGINT</code> to <code>SIG_DFL</code>. And finally <code>close</code> of some file descriptors followed by <code>munmap</code> and exit with 0. That is not what
+I was expecting to see, to be honest.</p>
+<p>I ran <code>strace</code> a few more times to see if something would change when leaving zombie process and running 
+everything with <code>spawn</code>, but no, nothing major, it just shows me what I already can see in logs... Dead end. 
+But at least we know that no one is sending <code>SIGTERM</code> to the parent process. But it still shuts down for some reason. </p>
+<p>At this point I got desperate enough to start mingling with source code of aiohttp. Since it's Python, you can change 
+the source code of any installed library (if it is not a C extension). So that is exactly what I did.</p>
+<h2 id="hacky-hacks">Hacky hacks</h2>
+<p>At this point I'm pretty sure that web server itself is the problem. We use <code>aiohttp.web.run_app()</code> <a href="https://github.com/aio-libs/aiohttp/blob/3.8/aiohttp/web.py#L460">function</a>
+to set up and run aiohttp web server, so let's take a look how it knows it's time to shut down. The interesting part is <a href="https://github.com/aio-libs/aiohttp/blob/3.8/aiohttp/web.py#L512">here</a></p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python"># snip
+try:
+    asyncio.set_event_loop(loop)
+    loop.run_until_complete(main_task)
+except (GracefulExit, KeyboardInterrupt):  # pragma: no cover
+    pass
+finally:
+    # cleanup
+</code></pre>
+<p>Okay, so it waits for <code>KeyboardInterrupt</code>, which can be <a href="https://docs.python.org/3/library/signal.html?highlight=signal#note-on-signal-handlers-and-exceptions">raised after any bytecode instruction</a>,
+and a <code>GracefulExit</code>. Let's see what kind of exception is this <a href="https://github.com/aio-libs/aiohttp/blob/3.8/aiohttp/web_runner.py#L31"><code>GracefulExit</code></a></p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">class GracefulExit(SystemExit):
+    code = 1
+
+def _raise_graceful_exit() -&gt; None:
+    raise GracefulExit()
+</code></pre>
+<p>Oh, it's a subclass of <code>SystemExit</code>. And it is used in a mysterious <code>_raise_graceful_exit()</code> function. Which itself
+is only used in <code>BaseRunner</code> as a <a href="https://github.com/aio-libs/aiohttp/blob/3.8/aiohttp/web_runner.py#L273">signal handler</a>... 
+Too much signal handlers for one day, in my opinion.</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">async def setup(self) -&gt; None:
+    loop = asyncio.get_event_loop()
+
+    if self._handle_signals:
+        try:
+            loop.add_signal_handler(signal.SIGINT, _raise_graceful_exit)
+            loop.add_signal_handler(signal.SIGTERM, _raise_graceful_exit)
+        except NotImplementedError:  # pragma: no cover
+            # add_signal_handler is not implemented on Windows
+            pass
+
+    self._server = await self._make_server()
+</code></pre>
+<p>So okay, the only way to stop aiohttp web server, started with <code>run_app</code>, is to either get <code>KeyboardInterrupt</code>, <code>GracefulExit</code> or 
+<code>SystemExit</code>. Let's hack source code for <code>run_app</code> a bit to see which one it actually is</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python"># snip
+try:
+    asyncio.set_event_loop(loop)
+    loop.run_until_complete(main_task)
+except (GracefulExit, KeyboardInterrupt):  # pragma: no cover
+<mark>    import traceback
+</mark><mark>    traceback.print_exc()
+</mark>finally:
+    # cleanup
+</code></pre>
+<p>And now when we cancel the request we see this</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">Traceback (most recent call last):
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python3.10&#x2F;site-packages&#x2F;aiohttp&#x2F;web.py&quot;, line 514, in run_app
+    loop.run_until_complete(main_task)
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python3.10&#x2F;asyncio&#x2F;base_events.py&quot;, line 628, in run_until_complete
+    self.run_forever()
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python3.10&#x2F;asyncio&#x2F;base_events.py&quot;, line 595, in run_forever
+    self._run_once()
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python3.10&#x2F;asyncio&#x2F;base_events.py&quot;, line 1873, in _run_once
+    handle._run()
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python3.10&#x2F;asyncio&#x2F;events.py&quot;, line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python3.10&#x2F;site-packages&#x2F;aiohttp&#x2F;web_runner.py&quot;, line 37, in _raise_graceful_exit
+    raise GracefulExit()
+aiohttp.web_runner.GracefulExit
+</code></pre>
+<p>Okay so it is a <code>GracefulExit</code>. But it only can be triggered from a signal handler set on the event loop by aiohttp, and
+we saw the <code>strace</code> output, there is no <code>SIGTERM</code> or <code>SIGINT</code> sent, it just does not make sense...</p>
+<h2 id="final-push">Final push</h2>
+<p>Okay, so problem is definitely with the web server. Let's peel off some abstraction layers. <code>run_app</code> sets up a lot of 
+stuff for you, so let's do it ourselves. So this</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">logger = logging.getLogger(__name__)
+
+handlers = [view(&#x27;&#x2F;execute&#x27;, ExecuteHandler)]
+
+
+async def process_pool_context(app: Application) -&gt; AsyncGenerator:
+    app[&#x27;process_pool&#x27;] = CancellablePool(max_workers=SETTINGS.max_workers)
+
+    yield
+
+    app[&#x27;process_pool&#x27;].shutdown()
+
+
+def main() -&gt; None:
+    application = Application(middlewares=[error_handler_middleware])
+    application.router.add_routes(handlers)
+
+    application.cleanup_ctx.append(process_pool_context)
+
+    logger.info(&#x27;Service started&#x27;)
+
+    run_app(
+        application,
+        host=&#x27;0.0.0.0&#x27;,  # nosec possible binding to all interface
+        port=8080,
+    )
+
+    logger.info(&#x27;Service stopped&#x27;)
+
+
+if __name__ == &#x27;__main__&#x27;:
+    main()
+</code></pre>
+<p>Turns into this</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">logger = logging.getLogger(__name__)
+
+handlers = [view(&#x27;&#x2F;execute&#x27;, ExecuteHandler)]
+
+def sig_handler(loop: asyncio.AbstractEventLoop) -&gt; None:
+    logging.info(&#x27;signal handler tripped&#x27;)
+    loop.stop()
+
+async def process_pool_context(app: Application) -&gt; AsyncGenerator:
+    app[&#x27;process_pool&#x27;] = CancellablePool(max_workers=SETTINGS.max_workers)
+
+    yield
+
+    app[&#x27;process_pool&#x27;].shutdown()
+
+
+def main() -&gt; None:
+    application = Application(middlewares=[error_handler_middleware])
+    application.router.add_routes(handlers)
+
+    application.cleanup_ctx.append(process_pool_context)
+    
+    loop = asyncio.get_event_loop()
+
+    loop.add_signal_handler(signal.SIGINT, sig_handler, loop)
+    # loop.add_signal_handler(signal.SIGTERM, sig_handler, loop)
+
+    
+    runner = web.AppRunner(application)
+    await runner.setup()
+    site = web.TCPSite(runner, &#x27;0.0.0.0&#x27;, 8080)
+    await site.start()
+    
+    logger.info(&#x27;Service started&#x27;)
+    
+    try:
+        loop.run_forever()
+
+    except KeyboardInterrupt:
+        logger.info(&#x27;KeyboardInterrupt&#x27;)
+        loop.stop()
+
+    loop.close()
+
+    logger.info(&#x27;Service stopped&#x27;)
+
+
+if __name__ == &#x27;__main__&#x27;:
+    main()
+</code></pre>
+<p>Though it's not the recommended way, setting up your server like this is viable. We set signal handlers 
+(I purposefully commented out the <code>SIGTERM</code> handler), set up <code>AppRunner</code> and a <code>TCPSite</code> and then just block
+main thread to run the event loop. I've started the service again and send the work request not expecting anything at 
+this point, because I was debugging this for 5 hours already (yeah, I'm a slowpoke). And then it worked. As it should have.
+The work got canceled and the web server was still up.</p>
+<p>So <em>something</em> definitely trips the signal handler for <code>SIGTERM</code> which causes the web
+server to shut down. But how is it possible? Since I've exhausted all other possibilities, it's time to look at the 
+implementation of <code>loop.add_signal_handler</code>. While poking around in the <code>run_app</code> implementation, I've already taken a 
+glance, but now was the time to actually figure out how it works. </p>
+<h2 id="in-the-belly-of-the-beast">In the belly of the beast</h2>
+<p>Let's look at the <a href="https://github.com/python/cpython/blob/3.10/Lib/asyncio/unix_events.py#L88">source code</a> again, no
+snipping this time</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">def add_signal_handler(self, sig, callback, *args):
+    &quot;&quot;&quot;Add a handler for a signal.  UNIX only.
+    Raise ValueError if the signal number is invalid or uncatchable.
+    Raise RuntimeError if there is a problem setting up the handler.
+    &quot;&quot;&quot;
+    if (coroutines.iscoroutine(callback) or
+            coroutines.iscoroutinefunction(callback)):
+        raise TypeError(&quot;coroutines cannot be used &quot;
+                        &quot;with add_signal_handler()&quot;)
+    self._check_signal(sig)
+    self._check_closed()
+    try:
+        # set_wakeup_fd() raises ValueError if this is not the
+        # main thread.  By calling it early we ensure that an
+        # event loop running in another thread cannot add a signal
+        # handler.
+        signal.set_wakeup_fd(self._csock.fileno())
+    except (ValueError, OSError) as exc:
+        raise RuntimeError(str(exc))
+
+    handle = events.Handle(callback, args, self, None)
+    self._signal_handlers[sig] = handle
+
+    try:
+        # Register a dummy signal handler to ask Python to write the signal
+        # number in the wakeup file descriptor. _process_self_data() will
+        # read signal numbers from this file descriptor to handle signals.
+        signal.signal(sig, _sighandler_noop)
+
+        # Set SA_RESTART to limit EINTR occurrences.
+        signal.siginterrupt(sig, False)
+    except OSError as exc:
+        del self._signal_handlers[sig]
+        if not self._signal_handlers:
+            try:
+                signal.set_wakeup_fd(-1)
+            except (ValueError, OSError) as nexc:
+                logger.info(&#x27;set_wakeup_fd(-1) failed: %s&#x27;, nexc)
+
+        if exc.errno == errno.EINVAL:
+            raise RuntimeError(f&#x27;sig {sig} cannot be caught&#x27;)
+        else:
+            raise
+</code></pre>
+<p>It does several notable things. First this <code>signal.set_wakeup_fd(self._csock.fileno())</code> business. If we look at the 
+<a href="https://docs.python.org/3/library/signal.html?highlight=signal#signal.set_wakeup_fd">docks</a> for it,
+it states that this functions sets up wekeup file descriptor, were the signal numbers are written. This is also confirmed
+by the comment for <code>signal.signal(sig, _sighandler_noop)</code>. Wait... Ain't file descriptors of a parent process get copied 
+to child process when using <code>fork</code>, along with <em>some</em> python modules?</p>
+<p>No fucking way...</p>
+<p>I need to check something real fast. </p>
+<p>As previously with aiohttp, we can hack asyncio source code. Comment says that <code>_process_self_data()</code> is in charge of 
+reading signal numbers. Let's take a look at this data for 
+<a href="https://github.com/python/cpython/blob/3.10/Lib/asyncio/unix_events.py#L81">ourselves</a>.</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">def _process_self_data(self, data):
+    print(data)
+    for signum in data:
+        if not signum:
+            # ignore null bytes written by _write_to_self()
+            continue
+        self._handle_signal(signum)
+</code></pre>
+<p>Yeah, it's <em><strong>dirty</strong></em>, but it's print-debug, what else did you expect? Okay, moment of truth. When running service we get
+this output</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">Traceback (most recent call last):
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python3.10&#x2F;site-packages&#x2F;aiohttp&#x2F;web.py&quot;, line 514, in run_app
+    loop.run_until_complete(main_task)
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python3.10&#x2F;asyncio&#x2F;base_events.py&quot;, line 628, in run_until_complete
+    self.run_forever()
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python3.10&#x2F;asyncio&#x2F;base_events.py&quot;, line 595, in run_forever
+    self._run_once()
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python3.10&#x2F;asyncio&#x2F;base_events.py&quot;, line 1873, in _run_once
+    handle._run()
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python3.10&#x2F;asyncio&#x2F;events.py&quot;, line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python3.10&#x2F;site-packages&#x2F;aiohttp&#x2F;web_runner.py&quot;, line 37, in _raise_graceful_exit
+    raise GracefulExit()
+aiohttp.web_runner.GracefulExit
+??? &gt; b&#x27;\x0f\x11&#x27;
+??? &gt; b&#x27;\x00&#x27;
+</code></pre>
+<blockquote>
+<p>Don't mind this <code>??? &gt;</code>, we use json logs and that is how <a href="https://github.com/brocode/fblog">fblog</a> 
+displays stuff you <code>print()</code> to the stdout</p>
+</blockquote>
+<p>At this point I gave myself the biggest facepalm, but just to be sure let's run it through REPL</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">&gt;&gt;&gt; int.from_bytes(b&#x27;\x0f&#x27;, &#x27;big&#x27;)
+15
+</code></pre>
+<p>No way. It's a <code>SIGTERM</code> that worker just received, followed by <code>SIGCHLD</code> it got when process started with <code>pexpect</code> 
+terminated!</p>
+<h2 id="the-explanation">The explanation</h2>
+<p>Here is the summary of what is happening. When aiohttp web server is started with <code>run_app</code> it sets up signal handlers
+to deal with <code>SIGINT</code> and <code>SIGTERM</code> gracefully. Because of how signal handling is implemented in asyncio, it registers
+a file descriptor where all the signals are going to be written, so handlers can be called in <em>async</em> way. By default, 
+<code>multiprocessing</code> uses <code>fork</code> strategy on Linux when creating new subprocesses. When new worker is created it gets a copy
+of a file descriptor, registered by parents' event loop, as well as a <code>signal</code> module settings. When it receives <code>SIGTERM</code>
+from main process it writes <code>SIGTERM</code> to that file descriptor. So, by sending <code>SIGTERM</code> to child process we, basically, 
+sent a <code>SIGTERM</code> to ourselves. This triggers signal handler and stops aiohttp web server.</p>
+<p>In hindsight, I could've got a clue about this from implementation of our <code>CancellablePool</code>. It sets <code>initializer</code> 
+argument for the pool to this function, otherwise workers just won't terminate.</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">def _set_signal_handlers() -&gt; None:
+    signal.signal(signal.SIGINT, signal.default_int_handler)
+    signal.signal(signal.SIGTERM, signal.SIG_DFL)
+</code></pre>
+<p>It resets the <code>_sighandler_noop</code> set by the <code>add_signal_handler</code>. So the fix is quite simple</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">def _set_signal_handlers() -&gt; None:
+    signal.signal(signal.SIGINT, signal.default_int_handler)
+    signal.signal(signal.SIGTERM, signal.SIG_DFL)
+    signal.set_wakeup_fd(-1)
+</code></pre>
+<p>Also in <code>strace</code> output of the worker you can actually find a <code>write</code> syscall right after it receives <code>SIGTERM</code></p>
+<pre data-lang="bash" class="language-bash "><code class="language-bash" data-lang="bash">select(0, NULL, NULL, NULL, {tv_sec=0, tv_usec=50000}) = ? ERESTARTNOHAND (To be restarted if no handler)
+--- SIGTERM {si_signo=SIGTERM, si_code=SI_USER, si_pid=1, si_uid=999} ---
+write(5, &quot;\17&quot;, 1)                      = 1
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+</code></pre>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">&gt;&gt;&gt; int.from_bytes(&quot;\17&quot;.encode(), &#x27;big&#x27;)
+15
+</code></pre>
+<h1 id="fin">FIN</h1>
+<p>This is as undefined behaviour as it gets. It'll be a good idea to open an issue about this for CPython, because
+I haven't found one related to this problem (though I didn't look that thoroughly). In a meantime, here is a code to
+reproduce this issue. You can just copy-paste it, and it should work on Linux.</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">import asyncio
+import logging
+import signal
+import sys
+import time
+
+from multiprocessing import context as ctx
+
+
+logger = logging.getLogger(__name__)
+
+
+def h():
+    # This handler is going to be called even though SIGTERM was not send to the main process
+    print(&quot;Caught signal in parent?&quot;)
+
+
+async def main():
+    loop = asyncio.get_event_loop()
+    loop.add_signal_handler(signal.SIGINT, h)
+    loop.add_signal_handler(signal.SIGTERM, h)
+    p = ctx.Process(target=handler)
+    p.start()
+
+    await asyncio.sleep(2)
+    # Send SIGTERM
+    p.terminate()
+    p.join()
+
+    print(&#x27;Continuing execution&#x27;)
+    # Pretend like we are doing some other stuff
+    await asyncio.sleep(2)
+    print(&#x27;Done, bye!&#x27;)
+
+
+def handler():
+    def sig_h(sig, frame):
+        print(f&#x27;Caught signal in worker worker: {sig}&#x27;)
+        sys.exit()
+
+    signal.signal(signal.SIGINT, sig_h)
+    signal.signal(signal.SIGTERM, sig_h)
+    print(&#x27;Set signal handlers&#x27;)
+    try:
+        time.sleep(10)
+    finally:
+        print(&quot;Cleaning up resources&quot;)
+        signal.signal(signal.SIGINT, signal.default_int_handler)
+        signal.signal(signal.SIGTERM, signal.SIG_DFL)
+
+
+if __name__ == &quot;__main__&quot;:
+    # Uncomment this line to &quot;fix&quot;
+    # multiprocessing.set_start_method(&#x27;spawn&#x27;)
+    asyncio.run(main())
+</code></pre>
+
+	</div>
+	<hr class="post-end">
+	<footer class="post-info">
+    
+    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>3841 Words</p>
+    
+    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2022-06-25</p>
+    
+	</footer>
+  </article>
+    
+  
+  <div class="post-nav thin">
+	
+	
+  </div>
+
+  
+</main>
+
+	  </div>
+	  
+	  
+
+
+
+<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+  <p>&copy; 2023 <a href="https:&#x2F;&#x2F;mikhailantoshkin.github.io&#x2F;blog">Mikhail Antoshkin</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+  <p>Made with <a href="https://www.getzola.org" target="_blank" rel="noopener">Zola</a> &#183; Theme <a href="https://github.com/VersBinarii/hermit_zola" target="_blank" rel="noopener">Hermit_Zola</a>
+	
+  </p>
+</footer>
+
+
+
+
+	</div>
+	
+	<script src="https://mikhailantoshkin.github.io/blog/js/main.js"></script>
+
+	<!-- Math rendering -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body, { delimiters: [ {left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}, {left: '\\[', right: '\\]', display: true}, {left: '\\(', right: '\\)', display: false}]});"></script>
+
+    
+		<link href="https://unpkg.com/highlightjs-badge/highlightjs/styles/vs2015.css" rel="stylesheet">
+		<!-- https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.1/build/styles/  for min version -->
+		<script src="https://unpkg.com/highlightjs-badge/highlightjs/highlight.pack.js"></script>
+		<script src="https://unpkg.com/highlightjs-badge/highlightjs-badge.min.js"></script>
+		<script>
+			var pres = document.querySelectorAll("pre>code");
+			for (var i = 0; i < pres.length; i++) {
+				hljs.highlightBlock(pres[i]);
+			}
+		</script>
+		
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+			<script>
+				var options = {
+					copyIconClass: "gg-clipboard",
+					checkIconClass: "gg-check"
+				};
+				window.highlightJsBadge(options);
+			</script>
+		
+
+	
+
+	
+	<script src="https://mikhailantoshkin.github.io/blog/js/main.js"></script>
+
+    
+    
+
+	
+  </body>
+</html>
